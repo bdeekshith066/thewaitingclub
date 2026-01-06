@@ -11,11 +11,11 @@ export const Confirmation = ({ email }: ConfirmationProps) => {
         </p>
 
         <p className="text-ink leading-relaxed">
-          You're on the waitlist.
+          You&apos;re on the waitlist.
         </p>
 
         <p className="text-ink leading-relaxed">
-          We'll notify you when The Waiting Club begins.
+          We&apos;ll notify you when The Waiting Club begins.
         </p>
 
         <p className="text-ink leading-relaxed italic text-ink-light">

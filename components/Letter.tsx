@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import { useState } from "react";
 import { Confirmation } from "./Confirmation";
 import { EmailInput } from "./EmailInput";
@@ -21,9 +22,11 @@ export const Letter = () => {
     <article className="letter-container bg-paper rounded-sm p-8 sm:p-12 md:p-16 max-w-2xl mx-auto border border-line relative">
       {/* Logo at top right */}
       <div className="absolute top-4 right-4 sm:top-6 sm:right-6">
-        <img 
+        <Image 
           src="/logo.png" 
           alt="The Waiting Club" 
+          width={112}
+          height={112}
           className="w-20 sm:w-24 md:w-28 h-auto"
         />
       </div>
@@ -50,11 +53,11 @@ export const Letter = () => {
         </p>
 
         <p className="opacity-0 animate-fade-up delay-500 text-ink leading-relaxed">
-          Today, almost everything is a click away. Shows, entertainment, answers. There's nothing left to wait for anymore. And somewhere in all that instant access, something gentle disappeared.
+          Today, almost everything is a click away. Shows, entertainment, answers. There&apos;s nothing left to wait for anymore. And somewhere in all that instant access, something gentle disappeared.
         </p>
 
         <p className="opacity-0 animate-fade-up delay-700 text-ink leading-relaxed">
-          So we asked ourselves another question. What if we built something that didn't live on a screen at all?
+          So we asked ourselves another question. What if we built something that didn&apos;t live on a screen at all?
         </p>
 
         <p className="opacity-0 animate-fade-up delay-800 text-ink leading-relaxed">
@@ -62,8 +65,8 @@ export const Letter = () => {
         </p>
 
         <p className="opacity-0 animate-fade-up delay-900 text-ink leading-relaxed mt-6">
-          If that sounds like something you'd enjoy, leave your email below. 
-          We’ll let you know when we get started.
+          If that sounds like something you&apos;d enjoy, leave your email below. 
+          We&apos;ll let you know when we get started.
         </p>
 
         <p className="opacity-0 animate-fade-up delay-1000 text-ink leading-relaxed italic text-ink-light">
