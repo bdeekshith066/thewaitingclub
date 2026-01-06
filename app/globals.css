@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Kalam:wght@300;400;700&family=Righteous&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #f0ede6;
+  }
+  
+  body {
+    color: #2c2c2c;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+    font-size: 1.125rem;
+    font-family: 'Kalam', cursive;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #2c2c2c;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    margin-bottom: 0.75rem;
+  }
+
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: #5a6c7d;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s ease;
+  }
+
+  a.no-underline {
+    text-decoration: none;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  a.no-underline:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  button {
+    color: #5a6c7d;
+    background: transparent;
+    border: 1px solid #5a6c7d;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s ease;
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.7;
+  }
+
+  input, textarea, select {
+    background: transparent;
+    border: 1px solid #5a6c7d;
+    color: #2c2c2c;
+    padding: 0.5rem;
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #8b7355;
+  }
+
+  label {
+    color: #2c2c2c;
+    font-family: 'Kalam', cursive;
+  }
+
+  footer {
+    color: #5a6c7d;
+    font-family: 'Kalam', cursive;
+    font-size: 0.95rem;
+  }
+
+  em, .italic {
+    font-style: italic;
+    color: #5a6c7d;
+  }
+}
+
+@layer components {
+  .page-transition {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 250ms ease-out, transform 250ms ease-out;
+  }
+
+  .page-transition.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .page-transition {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  .paper-texture {
+    background-color: #f0ede6;
+  }
+
+  .logo-main {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .logo-tagline {
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .delay-800 {
+    animation-delay: 800ms;
+  }
+
+  .delay-900 {
+    animation-delay: 900ms;
+  }
+
+  .delay-1000 {
+    animation-delay: 1000ms;
+  }
+
+  .delay-1100 {
+    animation-delay: 1100ms;
+  }
+
+  .delay-1200 {
+    animation-delay: 1200ms;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-up {
+      animation: none;
+      opacity: 1;
+    }
+  }
+}
+
